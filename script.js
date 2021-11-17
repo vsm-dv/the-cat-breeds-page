@@ -9,6 +9,7 @@ const spanModal = document.querySelector('.modal-span');
 const pModal = document.querySelector('.modal-p');
 
 const root = document.querySelector('body');
+const logo = document.querySelector('.logo');
 const themeButton = document.querySelector('.light');
 const buttonText = document.querySelector('.button-text');
 
@@ -23,6 +24,7 @@ const childFriendly = document.querySelector('.child-friendly');
 
 themeButton.textContent = stdTheme === 'light' ? '🤍' : '💜';
 buttonText.textContent = stdTheme === 'light' ? 'Light theme' : 'Dark theme';
+logo.src = stdTheme === 'light' ? './assets/cat-icon-dark.svg' : './assets/cat-icon-light.svg';
 
 root.style.setProperty('--color-background', stdTheme === 'light' ? '#fae6fae6' : '#000000bf');
 root.style.setProperty('--color-text', stdTheme === 'light' ? '#000000bf' : '#fae6fae6');
@@ -30,7 +32,6 @@ root.style.setProperty('--color-button', stdTheme === 'light' ? '#ee82ee' : '#6c
 
 themeButton.addEventListener('click', () => {
     themeButton.textContent = themeButton.textContent === '🤍' ? '💜' : '🤍';
-    buttonText.textContent = buttonText.textContent === 'Light theme' ? 'Dark theme' : 'Light theme';
 
     localStorage.setItem('theme', stdTheme === 'light' ? 'dark' : 'light');
 
@@ -42,6 +43,8 @@ themeButton.addEventListener('click', () => {
 
     const changeButton = root.style.getPropertyValue('--color-background') === '#fae6fae6' ? '#ee82ee' : '#6c29aa';
     root.style.setProperty('--color-button', changeButton);
+
+    logo.src = root.style.getPropertyValue('--color-background') === '#fae6fae6' ? './assets/cat-icon-dark.svg' : './assets/cat-icon-light.svg'
 });
 
 
