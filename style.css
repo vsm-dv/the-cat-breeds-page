@@ -82,16 +82,9 @@ main {
 }
 
 .search-start {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.search-icon {
-    position: absolute;
-    width: 25px;
-    right: 275px;
 }
 
 input {
@@ -103,6 +96,11 @@ input {
     height: 30px;
     padding: 5px 0 5px 30px;
     font-size: 18px;
+    background-image: url('./assets/icons8-search.svg');
+    background-repeat: no-repeat;
+    background-position-x: 2.2%;
+    background-position-y: center;
+    background-size: 20px;
 }
 
 .not-found {
