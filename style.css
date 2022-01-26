@@ -100,7 +100,7 @@ input {
     background-repeat: no-repeat;
     background-position-x: 2.2%;
     background-position-y: center;
-    /* background-size: 20px; */
+    background-size: 20px;
 }
 
 .not-found {
