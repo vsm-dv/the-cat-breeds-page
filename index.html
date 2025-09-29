@@ -1,64 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>🐈 The cat breeds page</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐈 The cat breeds page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
+	<body>
+		<header>
+			<div class="logo-title">
+				<img src="./assets/cat-icon-dark.svg" class="logo" />
+				<h1>The cat breeds page</h1>
+			</div>
+			<ul>
+				<li><a href="https://github.com/vsm-dv/the-cat-breeds-page">About</a></li>
+				<div class="div-button">
+					<button class="light"></button>
+					<span class="button-text"></span>
+				</div>
+			</ul>
+		</header>
 
-<body>
+		<main>
+			<div class="main-start">
+				<p>Click on any picture to open the info section.</p>
+				<div class="search-start">
+					<span>Looking for a specific breed?</span>
+					<input type="text" placeholder="Search" />
+				</div>
+			</div>
 
-    <header>
-        <div class="logo-title">
-            <img src="./assets/cat-icon-dark.svg" class="logo">
-            <h1>The cat breeds page</h1>
-        </div>
-        <ul>
-            <li><a href="https://github.com/vsm-dv/the-cat-breeds-page">About</a></li>
-            <div class="div-button">
-                <button class="light">🤍</button>
-                <span class="button-text"></span>
-            </div>
-        </ul>
-    </header>
+			<button class="return hidden">Show all breeds</button>
 
-    <main>
-        <div class="main-start">
-            <p>Click on any picture to open the info section.</p>
-            <div class="search-start">
-                <span>Looking for a specific breed?</span>
-                <input type="text" placeholder="Search">
-            </div>
-        </div>
+			<div class="main-cats"></div>
 
-        <button class="return hidden">Show all breeds</button>
-
-        <div class="main-cats">
-        </div>
-
-        <a class="back-top" href="#"><img src="./assets/double-arrow-up.svg"></a>
-
-    </main>
-    <div class="modal hidden">
-        <img src="./assets/close-modal.svg" class="close-modal">
-        <div class="modal-div">
-            <img class="modal-img" src="" alt="">
-            <span class="modal-span"></span>
-            <p class="modal-p"></p>
-            <div class="attributes">
-                <span>Adaptability: <b class="adaptability"></b></span>
-                <span>Intelligence: <b class="intelligence"></b></span>
-                <span>Energy level: <b class="energy-level"></b></span>
-                <span>Vocalisation: <b class="vocalisation"></b></span>
-                <span>Dog-friendly: <b class="dog-friendly"></b></span>
-                <span>Child-friendly: <b class="child-friendly"></b></span>
-            </div>
-        </div>
-    </div>
-
-</body>
-
+			<a class="back-top" href="#"><img src="./assets/double-arrow-up.svg" /></a>
+		</main>
+		<div class="modal hidden">
+			<img src="./assets/close-modal.svg" class="close-modal" />
+			<div class="modal-div">
+				<img class="modal-img" src="" alt="" />
+				<span class="modal-span"></span>
+				<p class="modal-p"></p>
+				<div class="attributes">
+					<span>Adaptability: <b class="adaptability"></b></span>
+					<span>Intelligence: <b class="intelligence"></b></span>
+					<span>Energy level: <b class="energy-level"></b></span>
+					<span>Vocalisation: <b class="vocalisation"></b></span>
+					<span>Dog-friendly: <b class="dog-friendly"></b></span>
+					<span>Child-friendly: <b class="child-friendly"></b></span>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
